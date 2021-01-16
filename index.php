@@ -7,12 +7,12 @@
  * Project name: Pair Program 2
  */
 
-
-
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
-echo "PHP Array Practice.";
+echo "<h1>Pair Program 2</h1>";
+
+echo "PHP Array Practice.<br>";
 
 $numbers = array(7, 9, 8, 9, 8, 8, 6);
 
@@ -28,15 +28,23 @@ largest($numbers);
 
 echo removeDups($numbers);
 
-?>
+function distribution($array) {
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Pair Program 2</title>
-</head>
-<body>
-<h1>Pair Program 2</h1>
-</body>
-</html>
+    sort($array);
+
+    echo "<br><br>Sorted and counted values";
+    $associativeArray = array_count_values($array);
+
+    echo "<br>[";
+
+    foreach($associativeArray as $key => $value) {
+        echo $key . "=>" . $value . ",";
+    }
+
+    echo "]";
+
+}
+
+echo distribution($numbers);
+
+?>
