@@ -9,5 +9,15 @@ function printArr($array) {
 }
 
 function largest($array) {
+
     echo max($array);
+
+}
+
+function removeDups($array) {
+
+    echo "<br>Duplicates removed:";
+
+    return printArr(array_unique($array));
+
 }

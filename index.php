@@ -20,9 +20,13 @@ printArr($numbers);
 
 ?> <br> <?php
 
-echo "Largest number in array: ";
+echo "<br>Largest number in array: ";
 
 largest($numbers);
+
+?> <br> <?php
+
+echo removeDups($numbers);
 
 ?>
 
