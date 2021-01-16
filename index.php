@@ -1,4 +1,4 @@
-<?php
+<?php include 'functions.php';
 
 /*
  * Name: George McMullen & Patrick Dang
@@ -7,10 +7,22 @@
  * Project name: Pair Program 2
  */
 
+
+
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 echo "PHP Array Practice.";
+
+$numbers = array(7, 9, 8, 9, 8, 8, 6);
+
+printArr($numbers);
+
+?> <br> <?php
+
+echo "Largest number in array: ";
+
+largest($numbers);
 
 ?>
 
